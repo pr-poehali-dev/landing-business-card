@@ -11,6 +11,9 @@ const Index = () => {
         {/* Hero Section */}
         <section className="mb-32 animate-fade-in">
           <div className="space-y-8">
+            <p className="text-lg lg:text-xl text-muted-foreground font-medium tracking-wide">
+              Александр Кузиков
+            </p>
             <h1 className="text-5xl lg:text-7xl font-bold tracking-tight text-foreground leading-tight">
               Работаю с ростом выручки через продукт, маркетинг и продажи
             </h1>
