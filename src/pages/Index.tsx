@@ -286,28 +286,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* CTA / Contact */}
-        <section className="animate-fade-in">
-          <Card className="p-16 lg:p-20 rounded-3xl bg-foreground text-background border-0">
-            <div className="max-w-3xl space-y-8">
-              <h2 className="text-5xl font-semibold">Контакт</h2>
-              <p className="text-2xl leading-relaxed text-background/80 font-light">
-                Открыт к диалогу по управленческим и коммерческим ролям, где важны рост выручки, продукт и системный подход.
-              </p>
-              <div className="flex gap-3 flex-wrap pt-4">
-                <Button size="lg" className="rounded-full px-8 h-12 text-base gap-2 bg-background text-foreground hover:bg-background/90">
-                  <Icon name="Linkedin" size={18} />
-                  Связаться через LinkedIn
-                </Button>
-                <Button size="lg" variant="outline" className="rounded-full px-8 h-12 text-base gap-2 border-2 border-background/20 text-background hover:bg-background/10">
-                  <Icon name="FileText" size={18} />
-                  Посмотреть проекты
-                </Button>
-              </div>
-            </div>
-          </Card>
-        </section>
-
       </div>
     </div>
   );
