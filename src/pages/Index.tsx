@@ -1,8 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import { useState } from "react";
 
 const Index = () => {
+  const [showExperience, setShowExperience] = useState(false);
+  const [showEducation, setShowEducation] = useState(false);
+
   return (
     <div className="min-h-screen bg-background">
       <div className="max-w-7xl mx-auto px-6 py-16 lg:px-16 lg:py-24">
@@ -52,9 +56,6 @@ const Index = () => {
               <h2 className="text-4xl font-semibold text-foreground">О себе</h2>
             </div>
             <div className="lg:col-span-2 space-y-8 text-xl text-muted-foreground leading-relaxed font-light">
-              <p>
-                Работаю с ростом выручки через продукт, маркетинг и продажи. Соединяю коммерцию, маркетинг и операционные процессы в единую логику — так, чтобы система давала результат.
-              </p>
               <p>
                 <span className="text-foreground font-normal">Опыт</span> — fashion, beauty, wellness. Федеральные и международные бренды: Shopping Live, MODIS, SELA, O'STIN (Funday), New Yorker, Charuel, Reserved, Cropp, Mohito, Sinsay. Рынки — РФ и СНГ.
               </p>
@@ -166,12 +167,122 @@ const Index = () => {
         {/* Experience / Industries */}
         <section className="mb-40 animate-fade-in">
           <h2 className="text-4xl font-semibold text-foreground mb-12">Опыт и индустрии</h2>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 mb-12">
             {['Fashion', 'Beauty', 'Wellness', 'Retail', 'E-commerce', 'Live Commerce', 'TV Commerce', 'РФ', 'СНГ'].map((tag, index) => (
               <span key={index} className="px-7 py-4 bg-card text-foreground rounded-full text-base font-normal">
                 {tag}
               </span>
             ))}
+          </div>
+
+          <div className="space-y-6">
+            <div>
+              <button
+                onClick={() => setShowExperience(!showExperience)}
+                className="flex items-center gap-3 text-lg text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Icon name={showExperience ? "ChevronDown" : "ChevronRight"} size={20} />
+                <span>Опыт работы — 15 лет 4 месяца</span>
+              </button>
+              {showExperience && (
+                <div className="mt-8 space-y-10 pl-8 animate-fade-in">
+                  <div className="space-y-4">
+                    <div className="space-y-2">
+                      <p className="text-sm text-muted-foreground">Апрель 2021 — Сентябрь 2025 (4 года 6 месяцев)</p>
+                      <h3 className="text-2xl font-semibold text-foreground">Shopping Live</h3>
+                      <p className="text-lg text-foreground">Директор по маркетингу</p>
+                    </div>
+                    <p className="text-base text-muted-foreground leading-relaxed">
+                      Мультиканальный e-commerce и live commerce проект (fashion, beauty, jewelry, FMCG)
+                    </p>
+                    <div className="space-y-2 text-base text-muted-foreground">
+                      <p>• +10% оборота при запуске 100+ брендов</p>
+                      <p>• Рост UPT с 1,7 до 3,5 за 18 месяцев</p>
+                      <p>• +64% Brand Awareness, +43% новая ЦА, +8% Retention</p>
+                      <p>• –35% затрат на контент при росте CTR +22%</p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="space-y-2">
+                      <p className="text-sm text-muted-foreground">Январь 2017 — Июнь 2021 (4 года 6 месяцев)</p>
+                      <h3 className="text-2xl font-semibold text-foreground">MODIS</h3>
+                      <p className="text-lg text-foreground">Директор по маркетингу</p>
+                    </div>
+                    <p className="text-base text-muted-foreground leading-relaxed">
+                      Управление маркетингом федеральной fashion-сети (140+ магазинов)
+                    </p>
+                    <div className="space-y-2 text-base text-muted-foreground">
+                      <p>• +30% рост продаж за 3 года</p>
+                      <p>• –50% рекламных затрат без потери эффективности</p>
+                      <p>• +25 новых магазинов (+30 000 м²)</p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="space-y-2">
+                      <p className="text-sm text-muted-foreground">Июнь 2010 — Август 2017 (7 лет 3 месяца)</p>
+                      <h3 className="text-2xl font-semibold text-foreground">SELA / O'STIN / FunDay / New Yorker / Charuel / RESERVED / Mohito</h3>
+                      <p className="text-lg text-foreground">Управление маркетингом, мерчандайзингом и развитием розничных сетей</p>
+                    </div>
+                    <div className="space-y-4 text-base text-muted-foreground">
+                      <div>
+                        <p className="font-medium text-foreground mb-1">LPP Group (RESERVED / CROPP / HOUSE / MOHITO / SINSAY) — Head of VM</p>
+                        <p>Масштабирование VM в multi-brand сети 200+ магазинов. LFL до +50%</p>
+                      </div>
+                      <div>
+                        <p className="font-medium text-foreground mb-1">CHARUEL — Acting Retail Director</p>
+                        <p>Рост продаж +30% за счёт VM и редизайна магазинов</p>
+                      </div>
+                      <div>
+                        <p className="font-medium text-foreground mb-1">NEW YORKER (CIS) — Territorial Manager</p>
+                        <p>Локализация мерчандайзинга в 5 странах. LFL +40%</p>
+                      </div>
+                      <div>
+                        <p className="font-medium text-foreground mb-1">SELA — Deputy Retail Director / Head of VM</p>
+                        <p>Управление сетью 300+ магазинов. LFL +50%, CR +20%</p>
+                      </div>
+                      <div>
+                        <p className="font-medium text-foreground mb-1">FUNDAY — Head of VM</p>
+                        <p>Оптимизация 7000+ SKU. Продажи +50%, остатки –15%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <div>
+              <button
+                onClick={() => setShowEducation(!showEducation)}
+                className="flex items-center gap-3 text-lg text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Icon name={showEducation ? "ChevronDown" : "ChevronRight"} size={20} />
+                <span>Образование</span>
+              </button>
+              {showEducation && (
+                <div className="mt-8 space-y-6 pl-8 animate-fade-in">
+                  <div className="space-y-2">
+                    <p className="text-sm text-muted-foreground">2019</p>
+                    <p className="text-lg text-foreground font-medium">Высшая школа делового администрирования</p>
+                    <p className="text-base text-muted-foreground">Информационно-коммуникационные технологии в обучении</p>
+                  </div>
+                  <div className="space-y-2">
+                    <p className="text-sm text-muted-foreground">2014</p>
+                    <p className="text-lg text-foreground font-medium">Российский государственный университет им. А.Н. Косыгина</p>
+                    <p className="text-base text-muted-foreground">Экономика и управление на предприятии</p>
+                  </div>
+                  <div className="space-y-3 pt-4">
+                    <p className="text-base text-foreground font-medium">Повышение квалификации</p>
+                    <div className="space-y-2 text-sm text-muted-foreground">
+                      <p>• 2024 — Практика внедрения AI-инструментов в маркетинг (ChatGPT, Midjourney, Runway)</p>
+                      <p>• 2023 — Digital Leadership & AI in Marketing (Coursera)</p>
+                      <p>• 2022 — Создание креативных концепций (Школа ИКРА)</p>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </section>
 
