@@ -10,26 +10,37 @@ const Index = () => {
         
         {/* Hero Section */}
         <section className="mb-32 animate-fade-in">
-          <div className="space-y-8">
-            <p className="text-lg lg:text-xl text-muted-foreground font-medium tracking-wide">
-              Александр Кузиков
-            </p>
-            <h1 className="text-5xl lg:text-7xl font-bold tracking-tight text-foreground leading-tight">
-              Работаю с ростом выручки через продукт, маркетинг и продажи
-            </h1>
-            <p className="text-xl lg:text-2xl text-muted-foreground max-w-3xl leading-relaxed font-light">
-              Соединяю коммерцию, маркетинг и операционные процессы в единую систему.
-              Фокус — управляемый рост и устойчивый коммерческий результат.
-            </p>
-            <div className="flex gap-4 pt-4">
-              <Button size="lg" className="gap-2">
-                <Icon name="Linkedin" size={20} />
-                LinkedIn
-              </Button>
-              <Button size="lg" variant="outline" className="gap-2">
-                <Icon name="Mail" size={20} />
-                Контакт
-              </Button>
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-7 space-y-8">
+              <p className="text-lg lg:text-xl text-muted-foreground font-medium tracking-wide">
+                Александр Кузиков
+              </p>
+              <h1 className="text-5xl lg:text-7xl font-bold tracking-tight text-foreground leading-tight">
+                Работаю с ростом выручки через продукт, маркетинг и продажи
+              </h1>
+              <p className="text-xl lg:text-2xl text-muted-foreground max-w-3xl leading-relaxed font-light">
+                Соединяю коммерцию, маркетинг и операционные процессы в единую систему.
+                Фокус — управляемый рост и устойчивый коммерческий результат.
+              </p>
+              <div className="flex gap-4 pt-4">
+                <Button size="lg" className="gap-2">
+                  <Icon name="Linkedin" size={20} />
+                  LinkedIn
+                </Button>
+                <Button size="lg" variant="outline" className="gap-2">
+                  <Icon name="Mail" size={20} />
+                  Контакт
+                </Button>
+              </div>
+            </div>
+            <div className="lg:col-span-5">
+              <div className="relative aspect-square lg:aspect-auto lg:h-[600px] rounded-2xl overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/533c674c-082a-43ee-b180-96c3545f1295/bucket/34035df4-b038-46c3-979f-0e41a5c4f0e5.png" 
+                  alt="Александр Кузиков"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </section>
