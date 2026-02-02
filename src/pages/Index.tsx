@@ -71,7 +71,7 @@ const Index = () => {
         <section className="mb-40 animate-fade-in">
           <div className="grid lg:grid-cols-3 gap-16">
             <div>
-              <h2 className="text-4xl font-semibold text-foreground">О себе</h2>
+              
             </div>
             <div className="lg:col-span-2 space-y-8 text-xl text-muted-foreground leading-relaxed font-light">
               <p>
@@ -89,7 +89,7 @@ const Index = () => {
 
         {/* Value Proposition */}
         <section className="mb-40 animate-fade-in">
-          <h2 className="text-4xl font-semibold text-foreground mb-16">Чем я полезен бизнесу</h2>
+          <h2 className="text-4xl font-semibold text-foreground mb-16">USP</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
@@ -129,7 +129,7 @@ const Index = () => {
         <section className="mb-40 animate-fade-in">
           <div className="grid lg:grid-cols-3 gap-16">
             <div>
-              <h2 className="text-4xl font-semibold text-foreground">Как я работаю</h2>
+              <h2 className="text-4xl font-semibold text-foreground">Подход</h2>
             </div>
             <div className="lg:col-span-2 space-y-10">
               {[
@@ -184,7 +184,7 @@ const Index = () => {
 
         {/* Experience / Industries */}
         <section className="mb-40 animate-fade-in">
-          <h2 className="text-4xl font-semibold text-foreground mb-12">Опыт и индустрии</h2>
+          <h2 className="text-4xl font-semibold text-foreground mb-12">Индустрии</h2>
           <div className="flex flex-wrap gap-3 mb-12">
             {['Fashion', 'Beauty', 'Wellness', 'Retail', 'E-commerce', 'Live Commerce', 'TV Commerce', 'РФ', 'СНГ'].map((tag, index) => (
               <span key={index} className="px-7 py-4 bg-card text-foreground rounded-full text-base font-normal">
