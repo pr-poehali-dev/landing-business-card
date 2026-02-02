@@ -26,14 +26,32 @@ const Index = () => {
               <p className="text-xl text-muted-foreground max-w-xl leading-relaxed font-light">
                 Соединяю коммерцию, маркетинг и операционные процессы в единую систему. Фокус — управляемый рост и устойчивый коммерческий результат.
               </p>
-              <div className="flex gap-3 pt-6">
-                <Button size="lg" className="rounded-full px-8 h-12 text-base gap-2 bg-foreground hover:bg-foreground/90">
+              <div className="flex flex-wrap gap-3 pt-6">
+                <Button 
+                  size="lg" 
+                  className="rounded-full px-8 h-12 text-base gap-2 bg-foreground hover:bg-foreground/90"
+                  onClick={() => window.open('https://www.linkedin.com/in/alexander-kuzikov', '_blank')}
+                >
                   <Icon name="Linkedin" size={18} />
                   LinkedIn
                 </Button>
-                <Button size="lg" variant="outline" className="rounded-full px-8 h-12 text-base gap-2 border-2">
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="rounded-full px-8 h-12 text-base gap-2 border-2"
+                  onClick={() => window.open('https://t.me/AVKuzikov', '_blank')}
+                >
+                  <Icon name="Send" size={18} />
+                  Telegram
+                </Button>
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="rounded-full px-8 h-12 text-base gap-2 border-2"
+                  onClick={() => window.location.href = 'mailto:alexander.kuzikov@mail.ru'}
+                >
                   <Icon name="Mail" size={18} />
-                  Контакт
+                  Email
                 </Button>
               </div>
             </div>
