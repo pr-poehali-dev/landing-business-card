@@ -16,11 +16,11 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div className="space-y-10">
               <div className="space-y-4">
-                <h1 className="text-6xl lg:text-8xl font-semibold text-foreground leading-[0.95] tracking-tight">
+                <h1 className="text-4xl lg:text-6xl font-semibold text-foreground leading-[0.95] tracking-tight">
                   Александр Кузиков
                 </h1>
                 <p className="text-2xl lg:text-3xl text-muted-foreground font-normal leading-snug">
-                  Работаю с ростом выручки через продукт, маркетинг и продажи
+                  Работаю с ростом выручки через продукт, визуал и продажи
                 </p>
               </div>
               <p className="text-xl text-muted-foreground max-w-xl leading-relaxed font-light">
@@ -200,7 +200,7 @@ const Index = () => {
                 className="flex items-center gap-3 text-lg text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Icon name={showExperience ? "ChevronDown" : "ChevronRight"} size={20} />
-                <span>Опыт работы — 15 лет 4 месяца</span>
+                <span>Опыт работы</span>
               </button>
               {showExperience && (
                 <div className="mt-8 space-y-10 pl-8 animate-fade-in">
