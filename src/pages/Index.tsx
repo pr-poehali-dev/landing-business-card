@@ -239,7 +239,7 @@ const Index = () => {
 
                   <div className="space-y-4">
                     <div className="space-y-2">
-                      <p className="text-sm text-muted-foreground">Июнь 2010 — Август 2017 (7 лет 3 месяца)</p>
+                      <p className="text-sm text-muted-foreground">Июнь 2006 — Август 2017 (11 лет 3 месяца)</p>
                       <h3 className="text-2xl font-semibold text-foreground">SELA / O'STIN / FunDay / New Yorker / Charuel / RESERVED / Mohito</h3>
                       <p className="text-lg text-foreground">Управление маркетингом, мерчандайзингом и развитием розничных сетей</p>
                     </div>
